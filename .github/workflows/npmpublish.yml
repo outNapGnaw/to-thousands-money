@@ -19,11 +19,20 @@ jobs:
           node-version: 12
       - run: npm install
       - run: npm run build
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: dist
+          path: dist
 
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: dist
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
@@ -37,6 +46,10 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: dist
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
