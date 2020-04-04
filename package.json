@@ -1,5 +1,5 @@
 {
-  "name": "to-thousands-money",
+  "name": "@outnapgnaw/to-thousands-money",
   "version": "0.1.0",
   "description": "format num to thousands money",
   "source": "src/index.js",         
