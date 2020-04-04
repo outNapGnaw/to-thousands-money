@@ -1,0 +1,28 @@
+{
+  "name": "to-thousands-money",
+  "version": "0.1.0",
+  "description": "format num to thousands money",
+  "source": "src/index.js",         
+  "main": "dist/format.js",          
+  "module": "dist/format.module.js",
+  "unpkg": "dist/format.umd.js",
+  "scripts": {
+    "dev": "microbundle watch",
+    "build": "microbundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outNapGnaw/to-thousands-money.git"
+  },
+  "keywords": ["thousands","money"],
+  "author": "peyton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/outNapGnaw/to-thousands-money/issues"
+  },
+  "homepage": "https://github.com/outNapGnaw/to-thousands-money#readme"
+}
