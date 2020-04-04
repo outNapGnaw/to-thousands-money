@@ -1,6 +1,6 @@
 {
   "name": "@outnapgnaw/to-thousands-money",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "format num to thousands money",
   "source": "src/index.js",         
   "main": "dist/format.js",          
